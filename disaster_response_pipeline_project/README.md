@@ -12,3 +12,12 @@
     `python run.py`
 
 3. Go to http://0.0.0.0:3001/
+
+## Overview of Files:
+app/templates/*: templates/html files for Flask web app
+
+data/process_data.py: Extract Train Load (ETL) pipeline used for data cleaning, feature extraction, and storing data in a SQLite database
+
+models/train_classifier.py: A machine learning pipeline that loads data, trains a model, and saves the trained model to a .pkl file that can be loaded for future prediction
+
+run.py: This file can be used to launch the Flask web app used to classify disaster messages
